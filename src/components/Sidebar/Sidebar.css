@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+.active{
+    background-color: #d3fbbc;
+    color: #84EC48;
+}
+.sidebar{
+    width: auto;
+    height: 100%;
+    position: fixed;
+    display: inline-block;
+    padding: 25px 15px;
+    background: #fff;
+}
+.side_section{
+    margin-top: 4.5rem;
+}
+.sidebar .side_section p{
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+}
+.sidebar .side_section a:not(.active):hover{
+    background-color: #d3fbbc;
+    color: #84EC48;
+}
+.sidebar .side_section p .bars{
+    width: 1.5rem;
+    padding: 0 5px;
+}
+.sidebar span{
+    position: absolute;
+    bottom: 0;
+    color: red;
+    margin-bottom: 20px;
+    display: flex;
+    padding: 0 5px;
+    filter: hue-rotate(0deg);
+}
+
+
+
+@media (max-width: 706px){
+    .sidebar{
+        display: none;
+    }
+}

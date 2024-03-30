@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+.active{
+    background-color: #d3fbbc;
+    color: #84EC48;
+}
+nav{
+    width: 100%;
+    background: #84EC48;
+    color: #fff;
+    padding: 15px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+nav .auto_img{
+    width: 10rem;
+}
+nav .greetings{
+    width: 55%;
+}
+nav .greetings h2{
+    font-size: 1.5rem;
+}
+nav .profile_section{
+    display: flex;
+    justify-content: space-between;
+}
+nav .profile_section span{
+    padding-right: 2rem;
+    margin-top: .4rem;
+}
+nav .profile_img{
+    width: 2rem;
+    height: 2em;
+    margin-top: .3rem;
+    border-radius: 50%;
+}
+nav .profile_section div{
+    padding-left: 1rem;
+}
+/* nav .menu_icon{
+    display: none;
+} */
+nav .bars{
+    font-size: 1.5rem;
+    right: 0;
+    cursor: pointer;
+    display: none;
+}
+nav .side_bar{
+    top: 0;
+    width: auto;
+    margin-top: 4.5rem;
+    left: 0;
+    height: 90%;
+    padding: 20px 15px;
+    background: #fff;
+    position: fixed;
+    display: none;
+}
+nav .side_bar p .icons{
+    color: black;
+    width: 2rem;
+    padding: 5px;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+nav .side_bar p .icons:hover{
+    color: #84EC48;
+}
+
+.label {
+    background: #f2f2f2;
+    word-break: normal;
+    padding: 5px 10px;
+    color: #84EC48;
+    border-radius: 6px;
+    position: absolute;
+    left: 55px;
+    top: 0;
+    line-height: normal;
+    transition: none;
+    opacity: 0;
+    pointer-events: none;
+    font-size: 12px;
+}
+nav .side_bar a:hover .label {
+    top: 8%;
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+nav .side_bar span .logout{
+    position: absolute;
+    font-size: 2rem;
+    bottom: 0;
+    color: red;
+    padding-bottom: 25px;
+    width: 2rem;
+    filter: hue-rotate(0deg);
+}
+
+/**********RESPONSIVENESS***************/
+/**********RESPONSIVENESS***************/
+@media (max-width: 330px){
+    nav .side_section{
+        height: 85%;
+    }
+}
+@media (max-width: 400px){
+    nav .auto_img{
+        width: 7rem;
+    }
+}
+@media (max-width: 430px){
+    .profile_section span{
+        display: none;
+    }
+}
+@media (max-width: 900px){
+    nav .greetings{
+        width: 40%;
+    }
+} 
+@media (max-width: 706px){
+    .greetings{
+        display: none;
+    }
+    nav .bars{
+        display: block;
+    }
+    nav .side_section{
+        display: none;
+    }
+    /* nav .menu_icon{
+        width: 2rem;
+        display: block;
+    } */
+}

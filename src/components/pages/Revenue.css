@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+  body{
+    background: #f2f2f2;
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .container{
+    width: 100%;
+    height:  auto !important;
+  }
+  .container-body{
+    margin-left: 150px;
+    margin-right: 10px;
+    padding-top: 100px;
+    width: auto;
+  }
+
+  .container-body .today_revenue{
+    display: flex;
+    justify-content: space-between;
+  }
+  .container-body .today_revenue h2{
+    font-size: 1.5rem;
+    color: #3a3939;
+  }
+  .container-body .today_revenue input{
+    font-size: 1rem;
+    font-weight: 700;
+    border: 2px solid #4f4f4f;
+    border-radius: 5px;
+  }
+  .container-body .balance{
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 10px;
+    height: 35vh;
+    background: #84EC48;
+    color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-body .balance div{
+    width: 65%;
+    text-align: center;
+  }
+  .container-body .balance div h2{
+    font-weight: 500;
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+  }
+  .container-body .balance div .btn{
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #84EC48;
+    border-radius: 5px;
+    padding: 15px 0;
+    margin-top: 10px;
+  }
+  .container-body .chart{
+    width: 100%;
+    margin: 30px 0;
+    border-radius: 10px;
+    height: 55vh;
+    background: #fff;
+    color: #414040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+
+
+/*************RESPONSIVENESS*****************/
+/*************RESPONSIVENESS*****************/
+  
+  @media (max-width: 706px){
+    .container{
+        width: 100%;
+        height: auto;
+    }
+    .container-body{
+      margin: 0 30px;
+      padding-top: 80px;
+      width: 90%;
+    }
+  }
