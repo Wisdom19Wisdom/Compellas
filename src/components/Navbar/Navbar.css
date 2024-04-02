@@ -63,11 +63,13 @@ nav .side_bar{
     display: none;
 }
 nav .side_bar p .icons{
-    color: black;
-    width: 2rem;
-    padding: 5px;
+    color: #84EC48;
+    width: 2.5rem;
+    padding: 10px;
+    background: #f2f2f2;
+    border-radius: 50%;
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 nav .side_bar p .icons:hover{
     color: #84EC48;
