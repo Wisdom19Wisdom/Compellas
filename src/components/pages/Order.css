@@ -20,13 +20,72 @@
     width: 100%;
   }
   .container-body{
-    margin-left: 150px;
+    margin-left: 180px;
     padding-top: 120px;
     width: auto;
   }
 
+  .container-body .container-head{
+    display: flex;
+  }
+  .container-body .container-head .btn{
+    margin-left: .7rem;
+    padding: .3rem .5rem;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background: #dfdfdf;
+    color: #4dc408;
+    font-weight: 500;
+  }
+
+  .order-payment {
+    margin: 50px 0;
+    background: #fff;
+    border-radius: 10px;
+    display: block;
+    justify-content: center;
+    width: 100%;
+}
+.order-payment table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #363636;
+}
+.order-payment .capt{
+    display: flex;
+    justify-content: space-between;
+    color: #84EC48;
+    margin: 5px 10px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.order-payment table thead{
+    color: #4dc408;
+    background: #d6fcc0;
+}
+.order-payment table thead, tr th{
+    padding: 10px;
+
+}
+.order-payment table tr, td {
+    text-align: left;
+    padding: 15px 5px;
+    border-bottom: 1px solid #84EC48;
+}
+
+.order-payment table tbody:nth-of-type(2n){
+    background: #f2f2f2;
+}
 
 
+
+  @media (max-width: 650px){
+    table th:last-child,
+    table td:last-child{
+      display: none;
+    }
+  }
   @media (max-width: 706px){
     .container-body{
         margin: 0 30px;

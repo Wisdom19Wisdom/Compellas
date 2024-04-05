@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+  }
+  body{
+    width: 100%;
+    background: #f2f2f2;
+    /* overflow-y: scroll; */
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .container{
+    width: 100%;
+  }
+  .container-body{
+    margin-left: 180px;
+    padding-top: 100px;
+    width: auto;
+  }
+  .container-body .head-title{
+    padding-bottom: 15px;
+  }
+  .container-body .notification-box{
+    background: #fff;
+    padding: .7rem;
+    margin-bottom: 1.8rem;
+    border-radius: 7px;
+  }
+  .container-body .notification-box .clock{
+    font-size: .7rem;
+    color: #666464;
+    font-weight: 500;
+    text-align: right;
+    padding-bottom: .5rem;
+  }
+  .container-body .notification-box .note-head{
+    color: #3b3b3b;
+  }
+  .container-body .notification-box .notification-body{
+    font-size: 1rem;
+    color: #888888;
+    font-weight: 600;
+    padding: 1rem 0;
+  }
+  .container-body .notification-box .note-cancel{
+    float: right;
+    padding: 4px;
+    background: red;
+    color: #fff;
+    border-radius: 50%;
+  }
+  .container-body .notification-box .notification-btn{
+    display: flex;
+  }
+  .container-body .notification-box .notification-btn .accept-btn{
+    background: #84EC48;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding: .5rem 4rem;
+    margin-right: .8rem;
+  }
+  .container-body .notification-box .notification-btn .decline-btn{
+    background: transparent;
+    font-weight: 600;
+    color: #fe3636;
+    border: 1px solid #fe3636;
+    border-radius: 40px;
+    padding: .5rem 4rem;
+    margin-right: .8rem;
+  }
+  .container-body .notification-box .notification-btn h3{
+    color: #84EC48;
+    padding-top: .3rem;
+  }
+
+
+
+  /**************RESPONSIVENESS******************/
+  @media (max-width: 400px){
+    .container-body .notification-box .notification-btn .accept-btn{
+        padding: .5rem 3rem;
+        margin-right: .5rem;
+      }
+      .container-body .notification-box .notification-btn .decline-btn{
+        padding: .5rem 3rem;
+        margin-right: 0;
+      }
+      .container-body .notification-box .notification-body{
+        width: 95%;
+      }
+  }
+  @media (max-width: 706px){
+    .container{
+        width: 100%;
+        overflow-x: scroll;
+    }
+    .container-body{
+        margin: 0 30px;
+        padding-top: 120px;
+        width: 100%;
+      }
+      .container-body .notification-box .notification-btn{
+        display: block;
+      }
+  }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {FaBorderAll, FaListUl, FaArrowLeft, FaBars, FaTimes, FaMoneyBill} from 'react-icons/fa'
+import {FaBorderAll, FaListUl, FaArrowLeft, FaBars, FaTimes, FaMoneyBill, FaBell, FaArrowCircleLeft} from 'react-icons/fa'
 import { Link, NavLink } from 'react-router-dom'
 import './Navbar.css'
 import autodesk from "../../assets/Autodesk_Logo.webp";
@@ -18,7 +18,7 @@ const Navbar = () => {
             <p>Let's get productive today</p>
         </div>
         <div className='profile_section'>
-            <span>🔔</span>
+            <Link to="/Notificatio"><span><FaBell/></span></Link>
             <img src={hungary} alt="profile pic" className='profile_img'/>
             <div>
                 <h4>Wisdom</h4>
@@ -27,10 +27,11 @@ const Navbar = () => {
         </div>
         <div className='bars' onClick={toggle}>{isOpen ? <FaTimes/> : <FaBars/>}</div>
         <div className='side_bar' style={{display: isOpen ? "block": ""}}>
-          <Link to="/" onClick={toggle}><p><div className='icons'><FaBorderAll/></div></p><span class="label">Dashboard</span></Link>
-          <NavLink to="/Order" onClick={toggle}><p><div className='icons'><FaListUl/></div></p></NavLink>
-          <NavLink to="/Revenue" onClick={toggle}><p><div className='icons'><FaMoneyBill/></div></p></NavLink>
-          <span><div className='logout'><FaArrowLeft/></div></span>
+          <Link to="/" onClick={toggle}><p><div className='icons'><FaBorderAll/> Dashboard</div></p></Link>
+          <NavLink to="/Order" onClick={toggle}><p><div className='icons'><FaListUl/> Order</div></p></NavLink>
+          <NavLink to="/Revenue" onClick={toggle}><p><div className='icons'><FaMoneyBill/> Revenue</div></p></NavLink>
+          <NavLink to="/Notificatio" onClick={toggle}><p><div className='icons'><FaBell/> Notification</div></p></NavLink>
+          <span><div className='logout'><FaArrowCircleLeft/> Logout</div></span>
         </div>
     </nav>
   )
