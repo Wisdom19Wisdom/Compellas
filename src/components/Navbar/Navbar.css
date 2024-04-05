@@ -64,7 +64,7 @@ nav .side_bar{
     position: fixed;
     display: none;
 }
-nav .side_bar p .icons{
+nav .side_bar p .icons, .order1{
     color: #84EC48;
     width: 10rem;
     padding: 10px;
@@ -73,6 +73,32 @@ nav .side_bar p .icons{
 }
 nav .side_bar p .icons:hover{
     background: #f2f2f2;
+    color: #84EC48;
+}
+nav .sidebar p, .order1{
+    color: #84EC48;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.order1{
+    margin-left: 5px;
+}
+.sidebar .order1:hover{
+    cursor: pointer;
+    background-color: #d3fbbc;
+    color: #84EC48;
+}
+nav a .sub-menu{
+    color: #84EC48;
+    font-size: .9rem;
+    margin-left: 8px;
+    padding: 8px;
+}
+nav a .sub-menu:hover{
+    cursor: pointer;
+    background-color: #d3fbbc;
     color: #84EC48;
 }
 

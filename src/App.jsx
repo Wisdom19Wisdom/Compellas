@@ -7,7 +7,7 @@ import Revenue from "./components/pages/Revenue"
 import Dashboar from "./components/pages/Dashboar"
 import Notificatio from "./components/pages/Notificatio"
 import AllOrder from "./components/pages/All_order"
-import Cancelle from "./components/pages/Cancelle"
+import Cancelle from "./components/pages/Cancelled"
 import Delivered from "./components/pages/Delivered"
 
 
