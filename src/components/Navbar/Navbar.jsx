@@ -16,9 +16,10 @@ const Navbar = () => {
       setSubMenuVisible(!subMenuVisible);
     };
 
+
   return (
     <nav>
-        <img className='auto_img' src={autodesk} alt="logo" />
+        <Link to="/"><img className='auto_img' src={autodesk} alt="logo" /></Link>
         <div className='greetings'>
             <h2>👋Good morning Yinka!</h2>
             <p>Let's get productive today</p>
@@ -45,10 +46,13 @@ const Navbar = () => {
             )}
           <NavLink to="/Revenue" onClick={toggle}><p><div className='icons'><FaMoneyBill/> Revenue</div></p></NavLink>
           <NavLink to="/Notificatio" onClick={toggle}><p><div className='icons'><FaBell/> Notification</div></p></NavLink>
+          <NavLink to="/Login" onClick={toggle}><p><div className='icon2'><button>Login</button></div></p></NavLink>
+          <NavLink to="/SignUp" onClick={toggle}><p><div className='icon2'><button>Login</button></div></p></NavLink>
           <span><div className='logout'><FaArrowCircleLeft/> Logout</div></span>
         </div>
     </nav>
-  )
+  );
+  
 }
 
 export default Navbar

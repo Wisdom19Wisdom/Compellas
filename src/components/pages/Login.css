@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+ body{
+    background: #f2f2f2;
+    /* overflow-y: scroll; */
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .container-body{
+    padding-top: 120px;
+    width: auto;
+    margin-bottom: 30px;
+  }
+  .container-body form{
+    width: 95%;
+  }
+  .container-body form input{
+    margin: .5rem 0;
+    width: 95%;
+    padding: 15px;
+    color: #84EC48;
+    font-size: 1rem;
+    font-weight: 500;
+    border: .1rem solid #d4d3d3;
+    border-radius: 10px;
+  }
+  .container-body form button{
+    margin: 20px 0;
+    width: 95%;
+  }
+  .container-body form a{
+    color: #4cb111;
+    margin-top: 30px;    
+  }
+
+
+
+  @media (max-width: 706px){
+    .container-body{
+        margin: 0;
+        padding-top: 80px;
+        width: 100%;
+      }
+  }

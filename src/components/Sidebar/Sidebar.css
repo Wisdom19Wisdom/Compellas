@@ -18,7 +18,7 @@
 .sidebar .side_section p, .order{
     padding: 5px;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: flex;
 }
 .sidebar .side_section a:not(.active):hover{
@@ -41,6 +41,16 @@
     font-size: .8rem;
     margin-left: 15px;
 }
+.sidebar .side_section p .bars button{
+    cursor: pointer;
+    padding: 8px 25px;
+    background: #84EC48;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+
 
 
 .sidebar span{

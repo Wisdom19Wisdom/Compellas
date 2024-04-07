@@ -64,7 +64,7 @@ nav .side_bar{
     position: fixed;
     display: none;
 }
-nav .side_bar p .icons, .order1{
+nav .side_bar p .icons, .icon2, .order1{
     color: #84EC48;
     width: 10rem;
     padding: 10px;
@@ -75,12 +75,22 @@ nav .side_bar p .icons:hover{
     background: #f2f2f2;
     color: #84EC48;
 }
-nav .sidebar p, .order1{
+nav .sidebar p, .icon2, .order1{
     color: #84EC48;
     padding: 5px;
     border-radius: 5px;
     display: flex;
 }
+.icon2 button{
+    cursor: pointer;
+    padding: 8px 25px;
+    background: #84EC48;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+
 
 .order1{
     margin-left: 5px;
@@ -112,11 +122,18 @@ nav .side_bar span .logout{
     filter: hue-rotate(0deg);
 }
 
+
 /**********RESPONSIVENESS***************/
 /**********RESPONSIVENESS***************/
 @media (max-width: 330px){
     nav .side_section{
         height: 85%;
+    }
+    nav .side_bar p .icons, .order1{
+        padding: 2px;
+    }
+    nav a .sub-menu{
+        padding: 4px;
     }
 }
 @media (max-width: 400px){

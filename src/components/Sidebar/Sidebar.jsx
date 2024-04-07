@@ -27,6 +27,8 @@ const Sidebar = () => {
           
         <NavLink to="/Revenue"><p><div className='bars'><FaMoneyBill/></div>Revenue</p></NavLink>
         <NavLink to="/Notificatio"><p><div className='bars'><FaBell/></div>Notification</p></NavLink>
+        <NavLink to="/Login"><p><div className='bars'><button>Login</button></div></p></NavLink>
+        <NavLink to="/SignUp"><p><div className='bars'><button>Signup</button></div></p></NavLink>
       </div>
 
       <span><div className='bars'><FaArrowCircleLeft/></div><p>Log Out</p></span>

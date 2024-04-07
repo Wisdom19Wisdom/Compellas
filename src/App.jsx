@@ -9,6 +9,8 @@ import Notificatio from "./components/pages/Notificatio"
 import AllOrder from "./components/pages/All_order"
 import Cancelle from "./components/pages/Cancelled"
 import Delivered from "./components/pages/Delivered"
+import Login from "./components/pages/Login"
+import SignUp from "./components/pages/SignUp"
 
 
 const App = () => {
@@ -24,6 +26,8 @@ const App = () => {
         <Route path='/All_order' element={<AllOrder/>}/>
         <Route path='/Cancelle' element={<Cancelle/>}/>
         <Route path='/Delivered' element={<Delivered/>}/>
+        <Route path='/Login' element={<Login/>}/>
+        <Route path='/SignUp' element={<SignUp/>}/>
       </Routes>
     </div>
   )
